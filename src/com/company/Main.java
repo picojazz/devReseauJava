@@ -24,6 +24,10 @@ public class Main {
         }
 
         */
+
+
+
+      // recup a aprtr d'un serveur
     try{
         Socket s = new Socket("time-a.nist.gov",13);
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));

@@ -11,7 +11,7 @@ public class EchoClient {
     public static void main(String[] args) {
 
         try {
-            Socket s = new Socket("192.168.1.113", 5555);
+            Socket s = new Socket("192.168.43.195", 5555);
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             PrintWriter out = new PrintWriter(s.getOutputStream(),true);
             Scanner clavier = new Scanner(System.in);

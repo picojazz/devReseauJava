@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f915bb8d-9c26-48e4-a99f-f072039b3c33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/serverClientNonConnect/EchoClientUDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/serverClientNonConnect/EchoServerUDP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tp2/CalculRmi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/tp2/ClientRmi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sockets/com/company/serverClient/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sockets/com/company/serverClient/EchoClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sockets/com/company/serverClientNonConnect/EchoServerUDP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sockets/com/company/serverClientNonConnect/EchoServerUDP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/serverClient/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/serverClient/EchoClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,7 +37,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.EchoClientUDP">
+  <component name="RunManager" selected="Application.ClientRmi">
+    <configuration name="ClientRmi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.tp2.ClientRmi" />
+      <module name="sockets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.tp2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.serverClient.EchoClient" />
       <module name="sockets" />
@@ -88,23 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="sockets" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientRmi" />
+        <item itemvalue="Application.EchoClient" />
         <item itemvalue="Application.EchoClientUDP" />
         <item itemvalue="Application.EchoServerUDP" />
-        <item itemvalue="Application.EchoClient" />
         <item itemvalue="Application.EchoServer" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +138,7 @@
       <workItem from="1606160295624" duration="1667000" />
       <workItem from="1606326656103" duration="6517000" />
       <workItem from="1606333870682" duration="1774000" />
-      <workItem from="1606413494817" duration="2337000" />
+      <workItem from="1606413494817" duration="5678000" />
     </task>
     <servers />
   </component>
@@ -145,21 +150,21 @@
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
     <state x="768" y="274" width="378" height="562" key="#com.intellij.ide.util.MemberChooser/0.29.1920.1051@0.29.1920.1051" timestamp="1606332665687" />
-    <state width="1874" height="254" key="GridCell.Tab.0.bottom" timestamp="1606415224676">
+    <state width="1874" height="254" key="GridCell.Tab.0.bottom" timestamp="1606421125257">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1874" height="254" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606415224676" />
-    <state width="1874" height="254" key="GridCell.Tab.0.center" timestamp="1606415224674">
+    <state width="1874" height="254" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1606421125257" />
+    <state width="1874" height="254" key="GridCell.Tab.0.center" timestamp="1606421125254">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1874" height="254" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606415224674" />
-    <state width="1874" height="254" key="GridCell.Tab.0.left" timestamp="1606415224673">
+    <state width="1874" height="254" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1606421125254" />
+    <state width="1874" height="254" key="GridCell.Tab.0.left" timestamp="1606421125251">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1874" height="254" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606415224673" />
-    <state width="1874" height="254" key="GridCell.Tab.0.right" timestamp="1606415224675">
+    <state width="1874" height="254" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1606421125251" />
+    <state width="1874" height="254" key="GridCell.Tab.0.right" timestamp="1606421125256">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1874" height="254" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606415224675" />
+    <state width="1874" height="254" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1606421125256" />
   </component>
 </project>

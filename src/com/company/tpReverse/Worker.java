@@ -7,8 +7,8 @@ import java.net.Socket;
 
 public class Worker extends Thread {
     Socket socket = null;
-    BufferedReader in = null;
-    PrintWriter out = null;
+    BufferedReader fin = null;
+    PrintWriter fout = null;
 
     public String reverse(String line){
         return new StringBuilder(line).reverse().toString();
@@ -21,18 +21,18 @@ public class Worker extends Thread {
     @Override
     public void run() {
         try {
-            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            out = new PrintWriter(socket.getOutputStream(), true);
-            out.println("bonjour , bienvenue dans le Tp Reverse String");
+            fin = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            fout = new PrintWriter(socket.getOutputStream(), true);
+            fout.println("bonjour , bienvenue dans le Tp Reverse String");
             System.out.println(socket.getInetAddress()+" s'est connecté");
             boolean done = false;
             while(!done) {
-                String msg = in.readLine();
+                String msg = fin.readLine();
                 if(msg.isEmpty()) {
                     done = true;
-                    out.println("deconnexion");
+                    fout.println("deconnexion");
                 }else {
-                    out.println("inversé : "+reverse(msg));
+                    fout.println("inversé : "+reverse(msg));
                     System.out.println(socket.getInetAddress()+" a ecrit : "+msg+" et inversé en : "+reverse(msg));
                 }
             }

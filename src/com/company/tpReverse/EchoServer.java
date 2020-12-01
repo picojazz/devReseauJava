@@ -1,18 +1,28 @@
 package com.company.tpReverse;
 
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.*;
 
 public class EchoServer {
+
+
     public static void main(String[] args) {
-        try{
-            ServerSocket s = new ServerSocket(5555);
-            while(true) {
-                Socket incoming = s.accept();
-                Worker worker = new Worker(incoming);
-                worker.start();
+        int port =5555;
+
+       try{
+
+           ServerSocket s = new ServerSocket(port);
+
+           while(true) {
+               Socket incoming = s.accept();
+
+               Worker worker = new Worker(incoming);
+               worker.start();
 
             }
+
 
 
 
@@ -20,5 +30,8 @@ public class EchoServer {
             e.printStackTrace();
 
         }
+
     }
 }
+
+
